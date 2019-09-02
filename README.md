@@ -10,7 +10,7 @@
 <table>
   <tr><th>구분</th><th>내용</th></tr>
   <tr><td><strong>모이는 시간</strong></td><td>매주 토요일 10시~13시</td></tr>
-  <tr><td><strong>모이는 장소</strong></td><td>강남역 근처 스터디룸, 매주 월요일 인원확정 후 예약, 비용은 1/N</td></tr>
+  <tr><td><strong>모이는 장소</strong></td><td>강남역 컬처랩라운지, 매주 월요일 인원확정 후 예약, 비용은 1/N</td></tr>
   <tr>
     <td><strong>Ground Rule</strong></td>
     <td>
@@ -25,13 +25,13 @@
   
 ### 1차 일정
 <table>
-  <tr><th>날짜</th><th>발표내용</th><th>발표자</th><th>스터디룸</th><th>비고</th></tr>
-  <tr><td>2019-08-31</td><td>ch.2~5         </td><td>명혁    </td><td></td><td> </td>
-  <tr><td>2019-09-07</td><td>ch.6           </td><td>김가희  </td><td></td><td> </td>
-  <tr><td>2019-09-21</td><td>ch.7           </td><td>문현주  </td><td></td><td> </td>
-  <tr><td>2019-09-28</td><td>ch.8.1 ~ 8.8   </td><td>이재하  </td><td></td><td> </td>
-  <tr><td>2019-10-05</td><td>ch.8.9 ~ 8.17  </td><td>임동권  </td><td></td><td> </td>
-  <tr><td>2019-10-12</td><td>ch.9.1 ~ 9.8   </td><td>정신훈  </td><td></td><td> </td>
-  <tr><td>2019-10-19</td><td>ch.9.9 ~ 9.15  </td><td>정지완  </td><td></td><td> </td>
-  <tr><td>2019-10-26</td><td>ch.9.16 ~ 9.26 </td><td>한송이  </td><td></td><td> </td>
+  <tr><th>날짜</th><th>발표내용</th><th>발표자</th><th>비고</th></tr>
+  <tr><td>2019-08-31</td><td>ch.1~4         </td><td>명혁    </td><td><a href="doc/ch1-3/ch1-3.md">ch1-3</a>, <a href="doc/ch4/ch4.md">ch4</a></td>
+  <tr><td>2019-09-07</td><td>ch.6           </td><td>김가희  </td><td> </td>
+  <tr><td>2019-09-21</td><td>ch.7           </td><td>문현주  </td><td> </td>
+  <tr><td>2019-09-28</td><td>ch.8.1 ~ 8.8   </td><td>이재하  </td><td> </td>
+  <tr><td>2019-10-05</td><td>ch.8.9 ~ 8.17  </td><td>임동권  </td><td> </td>
+  <tr><td>2019-10-12</td><td>ch.9.1 ~ 9.8   </td><td>정신훈  </td><td> </td>
+  <tr><td>2019-10-19</td><td>ch.9.9 ~ 9.15  </td><td>정지완  </td><td> </td>
+  <tr><td>2019-10-26</td><td>ch.9.16 ~ 9.26 </td><td>한송이  </td><td> </td>
 </table>
