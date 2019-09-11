@@ -27,7 +27,7 @@
 <table>
   <tr><th>날짜</th><th>발표내용</th><th>발표자</th><th>참가자</th><th>비고</th></tr>
   <tr><td>2019-08-31</td><td>ch.1~4         </td><td>명혁    </td><td>명혁,이재하,임동권,정신훈,정지완</td><td><a href="doc/ch1-3/ch1-3.md">ch1-3</a>, <a href="doc/ch4/ch4.md">ch4</a></td>
-  <tr><td>2019-09-14</td><td>ch.6           </td><td>명혁    </td><td>김진태,명혁,문현주,이재하,임동권</td><td>일주일 연기됨</td>
+  <tr><td>2019-09-14</td><td>ch.6           </td><td>명혁    </td><td>김진태,명혁,문현주,이재하,임동권</td><td><a href="doc/ch4/ch4.md">ch4</a></td>
   <tr><td>2019-09-21</td><td>ch.7           </td><td>문현주  </td><td> </td><td> </td>
   <tr><td>2019-09-28</td><td>ch.8.1 ~ 8.8   </td><td>이재하  </td><td> </td><td> </td>
   <tr><td>2019-10-05</td><td>ch.8.9 ~ 8.17  </td><td>임동권  </td><td> </td><td> </td>
