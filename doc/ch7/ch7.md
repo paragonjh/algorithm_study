@@ -270,5 +270,67 @@ string rev(string::iterator& it) {
 
 ### 문제
 
-* 가나다라마
-* 
+* 이 문제를 무식하기 풀기
+
+  ```c++
+  // FANMEETING
+  // 이렇게하면 O(n^2)로 시간초과된다...
+  int fanmeeting(const char *member, const char *fan) {
+      int memberSize = (int)strlen(member);
+      int fanSize = (int)strlen(fan);
+      
+      int *m = new int[memberSize];
+      for (int i=0; i<memberSize; i++) {
+          m[i] = member[i] - 'F';
+      }
+      int *f = new int[fanSize];
+      for (int i=0; i<fanSize; i++) {
+          f[i] = fan[i] - 'F';
+      }
+  
+      int cnt = 0;
+      int N = fanSize - memberSize + 1;
+      for (int i=0; i<N; i++) {
+          int sum = 0;
+          for (int j=0; j<memberSize; j++) {
+              sum += (f[i+j] & m[j]);
+          }
+          if (sum==0) cnt++;
+      }
+      
+      delete [] m;
+      delete [] f;
+      
+      return cnt;
+  }
+  ```
+
+  
+
+* shift하면서 곱해지는 것을 아래와 같이 두 수의 곱으로 표현할 수 있는데... 생각하기는 쉽지 않다. 
+
+* 아래 그림에서 C<sub>i</sub> = A<sub>0</sub> x B<sub>1</sub> + A<sub>1</sub> x B<sub>i-1</sub> + A<sub>2</sub> x B<sub>i-2</sub> 임을 확인할 수 있다.
+
+* A의 순서를 A<sub>0</sub>, A<sub>1</sub>, A<sub>2</sub> 순서로 뒤집으면 C<sub>i</sub> = A<sub>2</sub> x B<sub>1</sub> + A<sub>1</sub> x B<sub>i-1</sub> + A<sub>0</sub> x B<sub>i-2</sub> 가 된다.
+
+![IMG_3571.JPG](images/IMG_3571.JPG)
+
+```c++
+int hugs(const string& members, const string& fans){
+     int N = members.size(), M = fans.size();
+     vector<int> A(N), B(M);
+     for (int i = 0; i < N; ++i) A[i] = (members[i] == 'M');
+     for (int i = 0; i < M; ++i) B[M - i - 1] = (fans[i] == 'M');
+
+  	 //karatsuba에서 자리 올림은 생략한다.
+     vector<int> C = karatsuba(A, B);
+     int allHugs = 0;
+     for (int i = N - 1; i < M; ++i){
+          if (C[i] == 0){
+               ++allHugs;
+          }
+     }
+     return allHugs;
+}
+```
+
