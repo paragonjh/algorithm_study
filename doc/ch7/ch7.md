@@ -7,9 +7,7 @@
 
 * 재귀호출과 차이: 하나와 나머지로 나누는가?  vs  절반씩 나누는가?
 
-<img src="/Users/appdori/Documents/GitHub/algorithm_study/doc/ch7/images/IMG_3566.jpg" alt="IMG_3566.jpg" style="zoom:50%;" />
-
-
+![](images/IMG_3566.jpg)
 
 * 분할정복의 구성요소
 
@@ -60,13 +58,13 @@
   * 중복계산되어 낭비가 심하다. -> overlapping subproblems.
   * 동적계획법이 고안된 계기 (8장에서 다룸)
   
-  ![IMG_3567.jpg](/Users/appdori/Documents/GitHub/algorithm_study/doc/ch7/images/IMG_3567.jpg)
+  ![IMG_3567.jpg](images/IMG_3567.jpg)
   
   
   
 * 병합 정렬과 퀵정렬
   
-  ![IMG_3568.jpg](/Users/appdori/Documents/GitHub/algorithm_study/doc/ch7/images/IMG_3568.jpg)
+  ![IMG_3568.jpg](images/IMG_3568.jpg)
   
   * 병합정렬은 일단 작게 나누고 병합하면서 정렬
   * 퀵정렬은 나눌 때 정렬하고 병합은 간단하게.
@@ -120,7 +118,7 @@
 
     - 시간복잡도는 O(n<sup>log<sub>2</sub>3</sup>)
 
-      <img src="/Users/appdori/Documents/GitHub/algorithm_study/doc/ch7/images/IMG_3572.jpg" alt="IMG_3573.jpg" style="zoom:50%;" />
+      <img src="images/IMG_3572.jpg" alt="IMG_3573.jpg" style="zoom:50%;" />
 
     - 카라츠바 곱셈 코드
 
@@ -179,7 +177,7 @@
     - Merge : 네 개를 뒤집어서 합치기. 뒤집는 작업은 upper를 뒤로 보내고, bottom을 앞으로 보내면된다.
     - base case : 모두 같은 색. b 또는 w.
 
-<img src="/Users/appdori/Documents/GitHub/algorithm_study/doc/ch7/images/IMG_3569-8951795.JPG" alt="IMG_3569.JPG" style="zoom:50%;" />
+<img src="images/IMG_3569-8951795.JPG" alt="IMG_3569.JPG" style="zoom:50%;" />
 
 ```c++
 string rev(string::iterator& it) {
@@ -213,7 +211,7 @@ string rev(string::iterator& it) {
     - 아래와 같은 방법으로 좌, 우로 확장하면서 나오는 경우를 모두 검사하여 최대 면적을 찾는다.
     - 아래 표시된 진한 영역 넓이중 가장 큰 것이 중앙에 걸쳐있는 경우의 최대 면적이다.
 
-![IMG_3570.jpg](/Users/appdori/Documents/GitHub/algorithm_study/doc/ch7/images/IMG_3570.jpg)
+![IMG_3570.jpg](images/IMG_3570.jpg)
 
 - 코드
 
@@ -272,147 +270,5 @@ string rev(string::iterator& it) {
 
 ### 문제
 
-* 유치원에서 소풍을 갈 때, 2명씩 짝을 지어주려 합니다.
-* 그런데 친구가 아닌 아이들을 짝이 되면 싸우기 때문에 떨어트려야 합니다.
-* 서로 친구인지 여부가 주어질 때, 짝지을 수 있는 방법의 수를 계산하는 프로그램을 구현하세요.
-
-  * 첫 줄에는 테스트 케이스의 수 C (C<=50)
-  * 각 테스트 케이스
-    * 첫번째 줄 : 학생의 수 n, 친구 쌍의 수 m  
-      (범위 :  2 <= n <= 10, 0 <= m <= n(n-1) / 2)
-    * 두번째 줄 : m개의 친구 쌍 정보
-* 출력 
-  
-  * 각 테스트 케이스마다 모든 학생을 친구끼리만 짝지어줄 수 있는 방법의 수를 출력
-* 예제 입력
-  ```shell
-  3
-  2 1
-  0 1
-  4 6
-  0 1 1 2 2 3 3 0 0 2 1 3
-  6 10
-  0 1 0 2 1 2 1 3 1 4 2 3 2 4 3 4 3 5 4 5
-  ```
-* 예제 출력
-  ```
-  1
-  3
-  4
-  ```
-
+* 가나다라마
 * 
-
-* ```c++
-  const int INF = 9999, SWITCHES = 10, CLOCKS = 16;
-  
-  // linked[i][j] = 'x' : i 번 스위치와 j 번 시계가 연결되어 있다
-  // linked[i][j] = '.' : i 번 스위치와 j 번 시계가 연결되어 있지 않다
-  // CLOCKS+1 은 char 형태이기 때문에 NULL 추가한 것 같아요;;(?)
-  const char linked[SWITCHES][CLOCKS+1] = {
-  	"xxx.............",
-      "...x...x.x.x....",
-      "....x.....x...xx",
-      "x...xxxx........",
-      "......xxx.x.x...",
-      "x.x...........xx",
-      "...x..........xx",
-      "....xx.x......xx",
-      ".xxxxx..........",
-      "...xxx...x...x.."
-  };
-  
-  // 모든 시계가 12시를 카리키고 있는지 확인하는 함수 (구현 생략)
-  bool areAligned(const vector<int>& clocks);
-  
-  // swtch번 스위치를 누르는 함수
-  void push(vector<int>& clocks, int swtch) {
-      for(int clock = 0; clock < CLOCKS; ++clock) {
-          if(linked[swtch][clock] == 'x') {
-              clocks[clock] += 3;
-              if(clocks[clock] == 15)
-                  clocks[clock] = 3;
-          }
-      }
-  }
-  
-  // clocks: 현재 시계들의 상태
-  // swtch : 이번에 누를 스위치의 번호
-  // 가 주어질 때, 남은 스위치들을 눌러서 clocks를 12시로 맞출 수 있는 최소 횟수를 반환한다.
-  // 만약 불가능하다면 INF 이상의 큰 수를 반환한다.
-  int solve(vector<int>& clocks, int swtch) {
-      if(swtch == SWITCHES)
-          return areAligned(clocks) ? 0 : INF;
-      
-      // 이 스위치를 0번 누르는 경우부터 3번 누르는 경우까지를 모두 시도한다.
-      int ret = INF;
-      for(int cnt = 0; cnt <4; ++cnt) {
-          ret = min(ret, cnt + solve(clocks, swtch + 1));
-          push(clocks, swtch);
-      }
-      
-      // push(clocks, swtch)가 4번 호출되었으니 clocks는 원래와 같은 상태가 된다.
-      return ret;
-  }
-  ```
-
-## 6.10 많이 등장하는 완전탐색 유형
-### 모든 순열 만들기
-
-* n개 중에서 r개를 뽑는 순열 완전탐색 문제를 재귀함수로 구현하는 연습이 필요합니다.  
-  ※ nPr = n! / (n-r)!
-* 단, n이 10을 넘어가는 경우는 주먹구구 법칙을 기반으로 실패 할 확률이 크므로 다른 방법을 고려해봐야 합니다.
-* C++의 경우에 순열을 생성해주는 next_permuation() 이라는 함수를 제공하기 때문에 조금 유리합니다.  
-  ```c++
-  #include <string>
-  #include <iostream>
-  #include <algorithm>
-  
-  using namespace std; 
-  
-  int main()
-  { 
-  	string s = "abaac";
-  	sort(s.begin(), s.end());
-  	
-  	cout << s << endl;
-  	int cnt = 0; 
-  	
-  	do { 
-  		cnt++;
-  		cout << s << endl;
-  	} while(next_permutation(s.begin(), s.end()));
-  	
-  	cout << "result: " << cnt << endl;
-  }
-  ```
-
-### 모든 조합 만들기
-
-* 순서없이 봅는 조합문제도 재귀함수로 구현하는 연습이 필요합니다.
-*  nCr = n! / r!(n-r)!
-
-### 2^n 가지 경우의 수 만들기
-
-* n개의 질문을 "예"/"아니오" 로 대답할 수 있는 경우의 수를 구하는 문제가 그 예입니다.
-* 2^n 문제는 재귀함수를 쓰지 않아도 모든 경우를 확인할 수 있습니다.  
-  ※ n비트 정수를 이용하면 모든 경우의 수를 for 문 하나로 구현할 할 수 있습니다.  
-  ```c++
-  #include <iostream>
-  #include <bitset>
-  
-  using namespace std; 
-  
-  int main()
-  { 
-      int a = 0;
-      string data;
-      
-      for (int i = 0; i < 10 ; ++i) {
-          data = std::bitset<8>(a).to_string();
-          cout << data << endl;
-          a += 1;
-      }
-  }
-  ```
-
