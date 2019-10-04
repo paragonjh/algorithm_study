@@ -16,7 +16,7 @@
 ![](images/그림8.1.PNG)
 
 
-```
+```c
 
 int n;
 int cache[100][100];
