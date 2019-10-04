@@ -53,7 +53,4 @@ int main() {
     return 0;
 }
 
-
-출처: https://yenik.tistory.com/6 [예니의 블로그]
-
 end code block.
