@@ -16,7 +16,7 @@
 ![](images/그림8.1.PNG)
 
 
-This is a normal paragraph:
+```
 
 int n;
 int cache[100][100];
@@ -53,4 +53,4 @@ int main() {
     return 0;
 }
 
-end code block.
+```
