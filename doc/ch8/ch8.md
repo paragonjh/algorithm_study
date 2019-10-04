@@ -10,3 +10,6 @@
 메모리의 장소를 캐시라고 부르며, 두번 이상 계산되는 부분 문제를 중복되는 부분 문제(overlapping Subproblem)
 
 ![](images/Cache.PNG)
+
+
+![](images/그림8.1.PNG)
