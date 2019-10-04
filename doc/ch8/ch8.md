@@ -11,5 +11,6 @@
 
 ![](images/Cache.PNG)
 
+* * *
 
 ![](images/그림8.1.PNG)
