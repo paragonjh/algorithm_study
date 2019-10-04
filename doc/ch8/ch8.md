@@ -14,3 +14,46 @@
 * * *
 
 ![](images/그림8.1.PNG)
+
+
+This is a normal paragraph:
+
+int n;
+int cache[100][100];
+int jump[100][100];
+ 
+int jumpgame(int y, int x) {
+    if (y == n - 1 && x == n - 1)return 1;
+    if (y >= n || x >= n)return 0;
+    int &ret = cache[y][x];
+    if (ret != -1)return ret;
+    int jumpsize = jump[y][x];
+    return ret = (jumpgame(y + jumpsize, x) || jumpgame(y, x + jumpsize));
+}
+int main() {
+    int cases;
+    scanf("%d",&cases);
+    int ret[50];
+ 
+    for (int i = 0; i < cases; i++) {
+        memset(cache, -1, sizeof(cache));
+        scanf("%d",&n);
+        for (int j = 0; j < n; j++) {
+            for (int k = 0; k < n; k++) {
+                scanf("%d",&jump[j][k]);
+            }
+        }
+        ret[i]=jumpgame(0, 0);
+    }
+ 
+    for (int i = 0; i < cases; i++) {
+        if (ret[i] == 1) cout << "YES" << endl;
+        else cout << "NO" << endl;
+    }
+    return 0;
+}
+
+
+출처: https://yenik.tistory.com/6 [예니의 블로그]
+
+end code block.
