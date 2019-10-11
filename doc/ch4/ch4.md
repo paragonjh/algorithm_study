@@ -461,9 +461,8 @@
   }
   ```
   - 시간복잡도 : O(NlgN)  
-  - 아래 그림 root node의 left, right는 각각 0, 2 가 아니라 7, 3 으로 수정되어야 합니다. (정지완님 해결!)
-  - 그 이유는 left = max(left, sum); / right = max(right, sum) 코드를 보면 값을 하나하나 더해가면서 max를 찾고 있기 때문입니다.
-    ![](images/1O-2.png)
+  - left = max(left, sum)는 mid에서 좌측으로 right = max(right, sum)는 mic에서 우측으로 (정지완님 해결!)
+    ![](images/10-2.png)
 
 * 알고리즘 #4
   * 개선내용 : 점화식 사용 (8장 동적계획법)
@@ -484,7 +483,7 @@
   }
   ```
   * 수행과정
-    ![](images/1O-1.png)
+    ![](images/10-1.png)
   
 * 이렇게 시간복잡도가 서로 다른 4개의 알고리즘을 구현했습니다.
   * O(N^3)
