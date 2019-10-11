@@ -101,4 +101,4 @@ int main() {
 
 * 재귀함수 호출구조
 
-  ![](images/와일드카드.jpeg)
+  ![](images/와일드카드.jpg)
