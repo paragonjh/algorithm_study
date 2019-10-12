@@ -26,11 +26,11 @@
 ### 일정
 <table>
   <tr><th>날짜</th><th>발표내용</th><th>발표자</th><th>참가자</th><th>비고</th></tr>
-  <tr><td>2019-08-31</td><td>ch.1~4  </td><td>명혁  </td><td>이재하,임동권,정신훈,정지완</td><td><a href="doc/ch1-3/ch1-3.md">ch1-3</a>, <a href="doc/ch4/ch4.md">ch4</a></td>
-  <tr><td>2019-09-14</td><td>ch.6    </td><td>명혁  </td><td>임동권,김진태     </td><td><a href="doc/ch6/ch6.md">ch6</a></td>
-  <tr><td>2019-09-21</td><td>ch.7    </td><td>김진태</td><td>임동권,명혁       </td><td><a href="doc/ch7/ch7.md">ch7</a></td>
-  <tr><td>2019-10-05</td><td>ch.8-1  </td><td>이재하</td><td>임동권,명혁,김진태 </td><td><a href="doc/ch8/ch8-1.md">ch8-1</a></td>
-  <tr><td>2019-10-12</td><td>ch.8-2  </td><td>임동권</td><td>이재하,명혁,김진태,김지훈,오지원,이호승,허민경 </td><td><a href="doc/ch8/ch8-2.md">ch8-2</a></td>
+  <tr><td>2019-08-31</td><td>ch.1~4  </td><td>명혁  </td><td>이재하,임동권,정신훈,정지완</td><td><a href="doc/ch1-3/ch1-3.md">ch.1~3</a>, <a href="doc/ch4/ch4.md">ch.4</a></td>
+  <tr><td>2019-09-14</td><td>ch.6    </td><td>명혁  </td><td>임동권,김진태     </td><td><a href="doc/ch6/ch6.md">ch.6</a></td>
+  <tr><td>2019-09-21</td><td>ch.7    </td><td>김진태</td><td>임동권,명혁       </td><td><a href="doc/ch7/ch7.md">ch.7</a></td>
+  <tr><td>2019-10-05</td><td>ch.8-1  </td><td>이재하</td><td>임동권,명혁,김진태 </td><td><a href="doc/ch8/ch8-1.md">ch.8-1</a></td>
+  <tr><td>2019-10-12</td><td>ch.8-2  </td><td>임동권</td><td>이재하,명혁,김진태,김지훈,오지원,이호승,허민경 </td><td><a href="doc/ch8/ch8-2.md">ch.8-2</a></td>
   <tr><td>2019-10-19</td><td>        </td><td>명혁  </td><td> </td><td> </td>
   <tr><td>2019-10-26</td><td>        </td><td>김진태</td><td> </td><td> </td>
   <tr><td>2019-11-02</td><td>        </td><td>김지훈</td><td> </td><td> </td>
