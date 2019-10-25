@@ -22,7 +22,7 @@
     </td>
   </tr>
 </table>
-  
+
 ### 2019년 일정
 <table>
   <tr><th>날짜</th><th>발표내용</th><th>발표자</th><th>참가자</th><th>비고</th></tr>
@@ -32,7 +32,7 @@
   <tr><td>2019-10-05</td><td>ch8(1) </td><td>이재하</td><td>임동권,명혁,김진태 </td><td><a href="doc/ch8/ch8-1.md">ch8(1)</a></td>
   <tr><td>2019-10-12</td><td>ch8(2) </td><td>임동권</td><td>이재하,명혁,김진태,김지훈,오지원,이호승,허민경 </td><td><a href="doc/ch8/ch8-2.md">ch8(2)</a></td>
   <tr><td>2019-10-19</td><td>ch8(3) </td><td>명혁  </td><td>임동권,이재하,김진태,오지원,허민경  </td><td><a href="doc/ch8/ch8-3.md">ch8(3)</a></td>
-  <tr><td>2019-10-26</td><td>        </td><td>김진태</td><td> </td><td> </td>
+  <tr><td>2019-10-26</td><td>ch8(4) </td><td>김진태</td><td>이재하, 임동권, 김지훈, 오지원, 이호승, 허민경 </td><td><a href="doc/ch8/ch8-4.md">ch8(4)</a> </td>
   <tr><td>2019-11-02</td><td>        </td><td>김지훈</td><td> </td><td> </td>
   <tr><td>2019-11-09</td><td>        </td><td>오지원</td><td> </td><td> </td>
   <tr><td>2019-11-16</td><td>        </td><td>이호승</td><td> </td><td> </td>
@@ -43,3 +43,4 @@
   <tr><td>2019-12-21</td><td>        </td><td>김진태</td><td> </td><td> </td>
   <tr><td>2019-12-28</td><td>        </td><td>김지훈</td><td> </td><td> </td>
 </table>
+
